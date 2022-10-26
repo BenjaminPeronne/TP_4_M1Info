@@ -51,6 +51,7 @@ int main() {
 void saisieCaractere(char &caractere) {
     cout << "Saisir un caractere : ";
     cin >> noskipws >> caractere;
+    cout << "\n";
     // cin >> caractere;
 }
 
@@ -67,7 +68,9 @@ bool estUnEspacement(char caractere) {
 }
 
 void afficheCodeCaractere(char caractere) {
-    cout << "Code ASCII : " << (int)caractere << endl;
+    cout << "Le caractere " << caractere << " a pour code ASCII : " << endl;
+    cout << "En hexadecimale : " << hex << "0x" << (int)caractere << endl;
+    cout << "En decimale : " << dec << (int)caractere << endl;
 }
 
 bool estUneMajuscule(char caractere) {
